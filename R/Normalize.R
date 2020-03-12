@@ -1,6 +1,6 @@
 #' Image normalization
 #'
-#' Normalize image pixel intensities between 0 and 1
+#' Normalize image pixel intensities between 0 and 1 (defunct soon)
 #'
 #' @param ImObj An array, a matrix or an image 
 #' @param inputRange The targeted min and max pixel intensities
@@ -21,7 +21,7 @@
 #' @export
 #'
 
-Normalize = function(ImObj,inputRange,autoRange=F,step=0.005,verbose=T){
+Normalize = function(ImObj,inputRange,autoRange=T,step=5*10**-3,verbose=F){
   
   #-----------------------------------------------------
   if(missing(ImObj)){
